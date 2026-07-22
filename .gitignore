@@ -1,0 +1,25 @@
+# Repositório de DATASET — versiona apenas o snapshot público sanitizado + documentação.
+# NADA de segredos, ambientes locais ou lixo de SO/IDE.
+
+# Segredos / credenciais (nunca versionar)
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*_secret*
+*credential*
+
+# Lixo de SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Logs / temporários
+*.log
+*.tmp

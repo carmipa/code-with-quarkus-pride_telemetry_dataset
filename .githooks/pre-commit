@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+# Guardião de conteúdo: impede que credenciais sejam publicadas junto com o dataset público.
+# Analisa só o conteúdo efetivamente preparado (staged); não imprime o valor detectado.
+set -eu
+
+secret_pattern="(AIza[0-9A-Za-z_-]{20,}|sk-[0-9A-Za-z_-]{16,}|gh[pousr]_[0-9A-Za-z]{20,}|github_pat_[0-9A-Za-z_]{20,}|AKIA[0-9A-Z]{16}|(api[_-]?key|access[_-]?token|auth[_-]?token|client[_-]?secret|password|passwd)[[:space:]]*[=:][[:space:]]*[\"']?[0-9A-Za-z_./+=-]{12,})"
+
+git diff --cached --name-only --diff-filter=ACMR | while IFS= read -r path; do
+    [ "$path" = ".githooks/pre-commit" ] && continue
+    if git show ":$path" 2>/dev/null | LC_ALL=C grep -Eiq "$secret_pattern"; then
+        printf '%s\n' "[BLOQUEADO] Possível chave de API ou credencial detectada em: $path" >&2
+        printf '%s\n' "Remova o segredo do conteúdo preparado antes de tentar novamente." >&2
+        exit 1
+    fi
+done
+
+exit 0
