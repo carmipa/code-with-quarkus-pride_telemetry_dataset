@@ -1,0 +1,4 @@
+# Acervo público: os bytes publicados não podem depender do SO de quem publica.
+* text=auto eol=lf
+*.csv text eol=lf
+*.json text eol=lf
