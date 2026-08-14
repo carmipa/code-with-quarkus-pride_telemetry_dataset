@@ -1,7 +1,7 @@
 secao,chave,valor
 dataset,dataset,code-with-quarkus-pride_telemetry_dataset
 dataset,versaoFormato,1
-dataset,geradoEm,2026-08-14T21:21:57.400345876Z
+dataset,geradoEm,2026-08-14T21:36:06.872782519Z
 dataset,descricao,"Telemetria de segurança ECS (padrão Elastic Common Schema) do ASPM Pride Security — Challenge FIAP 2026. Projeto EDUCACIONAL/de estudo. Sem IPs de origem, sem identidades, sem caminhos de máquina: apenas métricas agregadas e eventos ECS sanitizados para pesquisa SIEM/ML."
 ambienteExecucao,gpusDetectadas,
 ambienteExecucao,ramTotalGb,1
@@ -11,11 +11,12 @@ ambienteExecucao,hardwareColetadoAutomaticamente,false
 resumo,totalEventos,1000
 resumo,ameacas,0
 resumo,criticos,0
-resumo,falhas,0
-resumo,duracaoMediaMs,42
-resumo,duracaoP95Ms,74
-resumo.porCategoria,api,997
-resumo.porCategoria,process,3
-resumo.porTipo,access,997
-resumo.porTipo,desconhecido,3
-resumo.porResultado,success,1000
+resumo,falhas,7
+resumo,duracaoMediaMs,80
+resumo,duracaoP95Ms,85
+resumo.porCategoria,api,992
+resumo.porCategoria,process,8
+resumo.porTipo,access,992
+resumo.porTipo,desconhecido,8
+resumo.porResultado,failure,7
+resumo.porResultado,success,993
