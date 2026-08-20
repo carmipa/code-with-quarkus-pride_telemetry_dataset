@@ -1,22 +1,28 @@
 secao,chave,valor
 dataset,dataset,code-with-quarkus-pride_telemetry_dataset
 dataset,versaoFormato,1
-dataset,geradoEm,2026-08-07T14:17:41.839611518Z
+dataset,geradoEm,2026-08-20T13:02:02.250162400Z
 dataset,descricao,"Telemetria de segurança ECS (padrão Elastic Common Schema) do ASPM Pride Security — Challenge FIAP 2026. Projeto EDUCACIONAL/de estudo. Sem IPs de origem, sem identidades, sem caminhos de máquina: apenas métricas agregadas e eventos ECS sanitizados para pesquisa SIEM/ML."
-ambienteExecucao,gpusDetectadas,
-ambienteExecucao,ramTotalGb,1
-ambienteExecucao,sistemaOperacional,Linux
+ambienteExecucao,fabricante,System manufacturer
+ambienteExecucao,modeloMaquina,System Product Name
+ambienteExecucao,cpu,AMD Ryzen 7 5800X3D 8-Core Processor
+ambienteExecucao,gpuPrincipal,AMD Radeon RX 7800 XT
+ambienteExecucao,gpusDetectadas,AMD Radeon RX 7800 XT
+ambienteExecucao,ramTotalGb,64
+ambienteExecucao,sistemaOperacional,Windows 11
 ambienteExecucao,arquitetura,amd64
-ambienteExecucao,hardwareColetadoAutomaticamente,false
+ambienteExecucao,hardwareColetadoAutomaticamente,true
 resumo,totalEventos,1000
 resumo,ameacas,0
 resumo,criticos,0
-resumo,falhas,3
-resumo,duracaoMediaMs,164
-resumo,duracaoP95Ms,657
-resumo.porCategoria,api,995
-resumo.porCategoria,process,5
-resumo.porTipo,access,995
-resumo.porTipo,desconhecido,5
-resumo.porResultado,failure,3
-resumo.porResultado,success,997
+resumo,falhas,161
+resumo,duracaoMediaMs,310
+resumo,duracaoP95Ms,951
+resumo.porCategoria,api,62
+resumo.porCategoria,intrusion_detection,51
+resumo.porCategoria,process,887
+resumo.porTipo,access,62
+resumo.porTipo,desconhecido,938
+resumo.porResultado,failure,161
+resumo.porResultado,success,767
+resumo.porResultado,unknown,72
