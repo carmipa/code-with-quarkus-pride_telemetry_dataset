@@ -23,3 +23,12 @@ desktop.ini
 # Logs / temporários
 *.log
 *.tmp
+
+# Artefatos locais de assistentes de IA: ficam so na maquina, nunca no repositorio.
+.claude/
+.codex/
+.gemini/
+.cursor/
+.windsurf/
+.continue/
+.aider*
